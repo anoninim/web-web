@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101827">
+<title>Operasi Bensin Rp23.000 ⛽</title>
+<style>
+:root{--bg:#0b1220;--card:rgba(21,31,49,.88);--text:#f4f7fb;--muted:#aab6c8;--pink:#ff6b9a;--green:#72f0bd;--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);background:radial-gradient(ellipse at 10% 0%,#27345d 0,transparent 42%),radial-gradient(ellipse at 95% 35%,#48284d 0,transparent 35%),linear-gradient(135deg,#080d17,#101827 60%,#171126);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:30px 30px}
+.wrap{width:min(920px,92%);margin:0 auto;padding:28px 0 50px;position:relative}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:22px}
+.brand{font-weight:800;letter-spacing:.08em;font-size:.82rem;color:#dce5f4}.brand span{color:var(--pink)}
+.pill{border:1px solid var(--line);background:#ffffff0b;padding:8px 12px;border-radius:999px;color:var(--muted);font-size:.78rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,5vw,46px);box-shadow:0 24px 80px #0005;backdrop-filter:blur(16px)}
+.hero{text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#ff6b9a18;color:#ffb1ca;border:1px solid #ff6b9a35;font-size:.78rem;font-weight:700}
+h1{font-size:clamp(2.2rem,7vw,4.6rem);line-height:1.02;letter-spacing:-.055em;margin:20px 0 14px}
+h1 .money{color:var(--green);text-shadow:0 0 35px #72f0bd30}
+.lead{max-width:590px;margin:0 auto;color:var(--muted);line-height:1.75;font-size:1rem}
+.fuel{font-size:3.3rem;display:block;margin:16px 0 0;filter:drop-shadow(0 10px 20px #0005);animation:bob 2.8s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-7px) rotate(3deg)}}
+.message{min-height:58px;display:flex;justify-content:center;align-items:center;text-align:center;margin:24px auto 14px;padding:14px 18px;max-width:650px;border-radius:16px;background:#ffffff09;border:1px solid var(--line);color:#ffe1ec;font-weight:700;line-height:1.5}
+.actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:20px auto 6px;min-height:64px;position:relative}
+button,.button{font:inherit;border:0;cursor:pointer;border-radius:14px;padding:14px 22px;font-weight:800;transition:transform .2s,filter .2s,box-shadow .2s;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:9px}
+button:hover,.button:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.yes{background:linear-gradient(135deg,#7af2bf,#3bd6a0);color:#09261d;box-shadow:0 10px 28px #46e1a02b}
+.no{background:#ffffff0b;color:#f8d8e3;border:1px solid #ff9cbd60;position:relative;z-index:2}
+.small-note{font-size:.78rem;color:#8795aa;margin-top:12px}
+.hidden{display:none!important}
+.result{margin-top:28px;text-align:center;animation:pop .5s ease both}
+@keyframes pop{from{opacity:0;transform:scale(.92) translateY(12px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.happy-art{width:min(240px,65vw);aspect-ratio:1;margin:8px auto 18px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 25%,#fff0b6,#ff8bb0 45%,#8a6dff);box-shadow:0 0 0 12px #ffffff08,0 18px 55px #ff6b9a28;position:relative;overflow:hidden}
+.happy-art img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;filter:drop-shadow(0 10px 12px #44204455);animation:happy .9s ease-in-out infinite alternate}
+@keyframes happy{to{transform:rotate(-8deg) scale(1.08)}}
+.result h2{font-size:clamp(1.7rem,5vw,2.5rem);margin:10px 0}
+.result p{color:var(--muted);line-height:1.7}
+.section{margin-top:20px}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.section h3{margin:0;font-size:1.1rem}.sub{font-size:.8rem;color:var(--muted)}
+.media-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.media-box{border:1px solid var(--line);background:#ffffff07;border-radius:20px;padding:17px;min-width:0}
+.media-box h4{margin:0 0 7px}.media-box p{margin:0 0 14px;color:var(--muted);font-size:.85rem;line-height:1.6}
+.media-box video{width:100%;border-radius:12px;background:#05080d;aspect-ratio:16/9;display:block}
+.media-box audio{width:100%;height:42px}
+.controls{display:flex;gap:8px;flex-wrap:wrap}
+.secondary{background:#ffffff0c;color:var(--text);border:1px solid var(--line);padding:10px 13px;font-size:.86rem}
+.whatsapp{background:#25d366;color:#062714;box-shadow:0 10px 25px #25d36620}
+.office{background:#ffffff0c;color:var(--text);border:1px solid var(--line)}
+.contact-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:16px}
+.foot{text-align:center;color:#738198;font-size:.76rem;margin-top:24px;line-height:1.7}
+.confetti{position:fixed;top:-20px;z-index:20;pointer-events:none;animation:fall linear forwards;font-size:20px}
+@keyframes fall{to{transform:translateY(110vh) rotate(650deg);opacity:.2}}
+@media(max-width:650px){
+  .wrap{width:min(100% - 24px,920px);padding-top:14px;padding-bottom:28px}
+  .top{align-items:flex-start;flex-wrap:wrap;margin-bottom:14px}
+  .brand{font-size:.72rem}.pill{font-size:.68rem;padding:7px 9px}
+  .card{padding:22px 16px;border-radius:20px}
+  .hero h1{font-size:clamp(2.15rem,10vw,3.4rem)}
+  .lead{font-size:.93rem;line-height:1.7}
+  .fuel{font-size:2.8rem}
+  .message{font-size:.92rem;min-height:66px;margin-top:20px;padding:13px}
+  .actions{width:100%;min-height:112px;display:flex;align-items:center;justify-content:center;gap:10px;padding:8px 0}
+  .actions button{min-width:0;max-width:48%;padding:13px 12px;font-size:.88rem;white-space:normal}
+  .media-grid{grid-template-columns:1fr}
+  .media-box{padding:15px}
+  .section-head{align-items:flex-start;flex-direction:column}
+  .contact-actions{flex-direction:column}
+  .contact-actions .button{width:100%}
+  .happy-art{width:min(210px,62vw)}
+}
+@media(max-width:360px){
+  .wrap{width:calc(100% - 16px)}
+  .card{padding:18px 12px}
+  .actions button{font-size:.8rem;padding:12px 8px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">PROYEK <span>AKHIR BULAN</span> ⛽</div>
+    <div class="pill">Status: dompet menipis 🥲</div>
+  </header>
+
+  <main class="card hero">
+    <div class="eyebrow">💌 SURAT PERMOHONAN DANA DARURAT</div>
+    <span class="fuel" aria-hidden="true">⛽</span>
+    <h1>A, minta bensin<br><span class="money">Rp23.000</span> dong?</h1>
+    <p class="lead">A sudah akhir bulan nih, bensin tinggal kenangan dan dompet mulai menunjukkan tanda-tanda kehidupan minimalis. Boleh minta bantuan bensin Rp23.000? Nanti diganti, yaa. 🥹</p>
+
+    <div class="message" id="message" aria-live="polite">Pilih jawaban dengan hati yang baik… terutama yang hijau. 😇</div>
+    <div class="actions" id="actions">
+      <button class="no" id="noBtn" type="button">Tidak Ada 😝</button>
+      <button class="yes" id="yesBtn" type="button">Iya Ada ❤️</button>
+    </div>
+    <div class="small-note">Tenang, A… ini permohonan penuh harapan, bukan surat penagihan. 😄</div>
+
+    <section class="result hidden" id="result" aria-live="polite">
+      <div class="happy-art" role="img" aria-label="Foto Pria"><img src="BG.jpeg" alt="Foto Pria"></div>
+      <h2>YEAYYY, ADA HARAPAN! 🎉</h2>
+      <p id="finalText">Makasih banyak, A! Semoga rezeki A lancar terus dan bensinnya selalu penuh. ❤️</p>
+      <div class="contact-actions">
+        <a class="button whatsapp" id="waBtn" href="#" target="_blank" rel="noopener">💬 Kirim pesan WhatsApp</a>
+        <a class="button office" id="officeBtn" href="#">🏢 Konfirmasi ke kantor</a>
+      </div>
+      <p class="small-note">Nomor WhatsApp dan detail kantor bisa diatur di bagian KONFIGURASI pada kode.</p>
+    </section>
+  </main>
+
+  <section class="card section">
+    <div class="section-head">
+      <h3>🎧 Sudut hiburan</h3>
+      <span class="sub">Biar permintaan dana makin dramatis</span>
+    </div>
+    <div class="media-grid">
+      <div class="media-box">
+        <h4>🎵 Musik latar</h4>
+        <p>Tekan putar untuk musik santai buatan browser. Musik mulai setelah tombol ditekan karena aturan autoplay browser.</p>
+        <div class="controls">
+          <button class="secondary" id="musicBtn" type="button">▶ Putar musik</button>
+          <button class="secondary" id="muteBtn" type="button">🔇 Matikan</button>
+        </div>
+        <div style="margin-top:12px;font-size:.75rem;color:#8795aa">Dengerin a — Biar ACC dapet nya duit nya enak</div>
+      </div>
+      <div class="media-box">
+        <h4>🎬 Pemutar video</h4>
+        <video id="videoPlayer" controls playsinline preload="metadata" poster="" aria-label="Pemutar video"></video>
+        <div class="small-note" id="videoNote">Belum ada video yang dipilih. Contoh nama file: video-lucu.mp4</div>
+      </div>
+    </div>
+  </section>
+  <footer class="foot">Dibuat dengan harapan, humor, dan sisa bensin. ⛽<br>HEHEHE NANTI PRIA GANTI.</footer>
+</div>
+
+<script>
+/* ===================== KONFIGURASI MUDAH DIEDIT =====================
+  1. Ganti nomorWhatsApp dengan nomor tujuan, format internasional tanpa +.
+     Contoh Indonesia: 6281234567890
+  2. Ganti pesanWhatsApp jika ingin mengubah isi pesan.
+  3. Isi fileVideo dengan nama file video, contoh "video-lucu.mp4".
+     Simpan file video di folder yang sama dengan HTML.
+  4. Isi alamatKantor dengan alamat atau tautan peta kantor (opsional).
+===================================================================== */
+const nomorWhatsApp = "6281234567890";
+const pesanWhatsApp = "Assalamu'alaikum A 😄, makasih banyak ya untuk bantuan bensin Rp23.000. Untuk transfer bisa kabari aku lewat WhatsApp ini, atau kalau lebih nyaman bisa aku ambil/konfirmasi ke kantor. Nanti aku ganti akhir bulan. Makasih, A! ❤️";
+const fileVideo = "videolucu.mp4"; // contoh: "video-lucu.mp4"
+const alamatKantor = ""; // contoh: "https://maps.google.com/?q=Nama+Kantor"
+
+const message = document.getElementById("message");
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+const actions = document.getElementById("actions");
+const result = document.getElementById("result");
+const waBtn = document.getElementById("waBtn");
+const officeBtn = document.getElementById("officeBtn");
+const videoPlayer = document.getElementById("videoPlayer");
+const videoNote = document.getElementById("videoNote");
+
+let yesCount = 0;
+const messages = [
+  "Aa ada lagi ga? 🥺",
+  "Nanti diganti akhir bulan, yaa. Janji! 🤝",
+  "Makasih, A, nanti ganti! ❤️"
+];
+
+function moveNoButton(){
+  const btnRect = noBtn.getBoundingClientRect();
+  const pad = 10;
+  const maxX = Math.max(pad, window.innerWidth - btnRect.width - pad);
+  const maxY = Math.max(pad, window.innerHeight - btnRect.height - pad);
+  let x = pad + Math.random() * Math.max(1, maxX - pad);
+  let y = pad + Math.random() * Math.max(1, maxY - pad);
+  const yesRect = yesBtn.getBoundingClientRect();
+  for(let i=0;i<15;i++){
+    const overlapsYes = x < yesRect.right + 18 && x + btnRect.width > yesRect.left - 18 &&
+                        y < yesRect.bottom + 18 && y + btnRect.height > yesRect.top - 18;
+    if(!overlapsYes) break;
+    x = pad + Math.random() * Math.max(1, maxX - pad);
+    y = pad + Math.random() * Math.max(1, maxY - pad);
+  }
+  noBtn.style.position = "fixed";
+  noBtn.style.left = Math.round(x) + "px";
+  noBtn.style.top = Math.round(y) + "px";
+  noBtn.style.zIndex = "999";
+}
+noBtn.addEventListener("pointerenter", moveNoButton);
+noBtn.addEventListener("pointerdown", e => {
+  e.preventDefault();
+  moveNoButton();
+});
+noBtn.addEventListener("click", e => {
+  e.preventDefault();
+  moveNoButton();
+  message.textContent = "Hehe, tombolnya kabur terus! 😝 Coba pilih tombol hijau, A.";
+});
+noBtn.addEventListener("focus", moveNoButton);
+window.addEventListener("resize", () => {
+  if(noBtn.style.position === "fixed") moveNoButton();
+});
+
+yesBtn.addEventListener("click", () => {
+  if(yesCount >= 3) return;
+  yesCount++;
+  message.textContent = messages[yesCount-1];
+  yesBtn.textContent = yesCount < 3 ? `Iya Ada ❤️ (${yesCount}/3)` : "Makasih, A! 💖";
+  if(yesCount === 3) {
+    result.classList.remove("hidden");
+    yesBtn.disabled = true;
+    yesBtn.style.opacity = ".75";
+    noBtn.classList.add("hidden");
+    waBtn.href = "https://wa.me/" + nomorWhatsApp.replace(/\D/g,"") + "?text=" + encodeURIComponent(pesanWhatsApp);
+    if(alamatKantor.trim()) {
+      officeBtn.href = alamatKantor;
+      officeBtn.target = "_blank";
+      officeBtn.rel = "noopener";
+    } else {
+      officeBtn.href = "https://wa.me/" + nomorWhatsApp.replace(/\D/g,"") + "?text=" + encodeURIComponent("A, kalau lebih mudah aku bisa konfirmasi atau mengambil bantuan bensin Rp23.000 ke kantor. Kapan waktu yang cocok?");
+      officeBtn.target = "_blank";
+      officeBtn.rel = "noopener";
+      officeBtn.textContent = "🏢 Atur ke kantor via WhatsApp";
+    }
+    celebrate();
+    result.scrollIntoView({behavior:"smooth",block:"center"});
+  }
+});
+
+function celebrate(){
+  const icons = ["🎉","💖","✨","💸","⛽","🥳"];
+  for(let i=0;i<42;i++){
+    const el = document.createElement("div");
+    el.className = "confetti";
+    el.textContent = icons[Math.floor(Math.random()*icons.length)];
+    el.style.left = Math.random()*100 + "vw";
+    el.style.animationDuration = (2.3 + Math.random()*2.5) + "s";
+    el.style.animationDelay = (Math.random()*.8) + "s";
+    document.body.appendChild(el);
+    setTimeout(()=>el.remove(),6000);
+  }
+}
+
+// Video opsional: taruh file video di folder yang sama, lalu isi fileVideo di atas.
+if(fileVideo.trim()){
+  videoPlayer.src = fileVideo;
+  videoNote.textContent = "Video: " + fileVideo;
+} else {
+  videoPlayer.style.display = "none";
+  videoNote.textContent = "Video belum dipilih. Isi const fileVideo di kode dengan nama file video MP4 yang berada di folder yang sama.";
+}
+
+// Musik sintetis sederhana dengan Web Audio API, tidak butuh file tambahan.
+let audioCtx = null, musicTimer = null, musicOn = false, muted = false, noteIndex = 0;
+const melody = [523.25,659.25,783.99,659.25,587.33,698.46,880,698.46];
+function playNote(freq, start, duration, volume=.045){
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = "sine";
+  osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0.0001,start);
+  gain.gain.exponentialRampToValueAtTime(muted ? 0.0001 : volume,start+.03);
+  gain.gain.exponentialRampToValueAtTime(0.0001,start+duration);
+  osc.connect(gain); gain.connect(audioCtx.destination);
+  osc.start(start); osc.stop(start+duration+.04);
+}
+function musicStep(){
+  if(!musicOn || !audioCtx) return;
+  const now = audioCtx.currentTime;
+  const freq = melody[noteIndex % melody.length];
+  playNote(freq,now,.34);
+  if(noteIndex % 2 === 0) playNote(freq/2,now,.48,.018);
+  noteIndex++;
+}
+document.getElementById("musicBtn").addEventListener("click", async ()=>{
+  if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if(audioCtx.state === "suspended") await audioCtx.resume();
+  musicOn = !musicOn;
+  const btn = document.getElementById("musicBtn");
+  if(musicOn){
+    musicStep();
+    musicTimer = setInterval(musicStep,380);
+    btn.textContent = "⏸ Jeda musik";
+  }else{
+    clearInterval(musicTimer);
+    btn.textContent = "▶ Putar musik";
+  }
+});
+document.getElementById("muteBtn").addEventListener("click", ()=>{
+  muted = !muted;
+  document.getElementById("muteBtn").textContent = muted ? "🔊 Nyalakan suara" : "🔇 Matikan";
+});
+</script>
+</body>
+</html>
